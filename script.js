@@ -11,11 +11,13 @@ const showWinner = (userWin) => {
         msg.innerText = "You Win!!";
         userScore++;
         document.querySelector("#user-score").innerText = userScore;
+        msg.style.backgroundColor = "green";
     } else {
         console.log("Comp wins");
         msg.innerText = "You Lose!!";
         compScore++;
         document.querySelector("#comp-score").innerText = compScore;
+        msg.style.backgroundColor = "red";
     }
 }
 
@@ -23,6 +25,7 @@ const showWinner = (userWin) => {
 const drawGame = () => {
     console.log("Draw");
     msg.innerText = "Draw!!";
+    msg.style.backgroundColor = "#081b31";
 }
 
 const gencompchoice = () => {
